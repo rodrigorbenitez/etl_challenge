@@ -36,8 +36,26 @@ Only for testing purposes I have added some terminal logs to check database setu
 
 ### Setup
 
-Clone for Github repository and copy the source (GlobalLandTemperaturesByCity.csv) to data folder (/data).
+Clone for Github repository.
 
 ```sh
 git clone <repo_url>
+```
+### Python virtual environment
+
+Check you have Python installed in your machine.
+
+`python -V` or `python3 -V`
+
+Then:
+* Create Python Virtual Environment (if you want or install the libraries globally).
+* Install requirements
+* Run ETL script
+* Run API script
+
+```sh
+python3 -m virtualenv venv
+source venv/bin/activate # Activate virtual environment
+python -m pip install -r requirements.txt
+python src/etl/main.py
 ```
