@@ -1,4 +1,4 @@
-#  Spark Junior Data Engineering Takehome Test
+#  Spark - Junior Data Engineering Takehome Test
 
 
 ## Description
@@ -27,8 +27,12 @@ Trying to follow best modeling practices I have decided to create two tables ins
 
 Following a Dimensional Model, the schema consists in:
 
-* A dimensional table where store geographical entities.
-* A fact table where store every measure linked to geographical entities by a foreign key.
+* A dimensional table where store user entities.
+* A fact table with users subscriptions
+* A fact table where store every message sent and received to users entities by a foreign key.
+
+![Model](docs/erd.png)
+
 
 #### Logs
 
