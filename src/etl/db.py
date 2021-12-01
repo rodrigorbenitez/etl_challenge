@@ -82,7 +82,5 @@ def create():
 # Method to load database after creation with dimensions
 def initialize():
     utils.log('Initializing Database')
-    utils.log('Generating users dimensions')
-      
-  
+    utils.log('Generating dimensions')
     utils.log('Initialized Database!')
