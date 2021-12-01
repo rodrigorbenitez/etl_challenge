@@ -63,3 +63,22 @@ source venv/bin/activate # Activate virtual environment
 python -m pip install -r requirements.txt
 python src/etl/main.py
 ```
+
+## Development Time
+
+Well, I spent more than your reference time but sincerely I want to show you the way I work:
+
+* Firstly, analysing sources, data and building some graphs with Jupyter Notebooks. This helps me to check: the number of rows inserted, the data types and to decide how to build the different tables.
+* Adding comments in code and generating good documentation.
+
+**Time resume**
+
+* Analysing: 2 hours
+* Designing: 30 minutes
+* Developing: 5 hours
+* Testing : 1 hour
+* Writing Documentation: 2 hours
+
+## Author
+
+**Rodrigo Benitez** rodrigobenitezdev@gmail.com
