@@ -25,6 +25,9 @@ def users():
     url_users='https://619ca0ea68ebaa001753c9b0.mockapi.io/evaluation/dataengineer/jr/v1/users'
     df_users = pd.read_json(url_users)
     profile_dict=df_users['profile']
+    
+    # Extracting profile objects from profile column and then concate with the main table
+   
     df_profile = pd.DataFrame([x for x in profile_dict])
     df_users=pd.concat([df_users, df_profile], axis=1)
     df_users=df_users[['id','createdAt','updatedAt','firstName','lastName','address','city','country','zipCode','email','birthDate','gender','isSmoking','profession','income']]
@@ -45,6 +48,9 @@ def users():
 def subscriptions():
     url_users='https://619ca0ea68ebaa001753c9b0.mockapi.io/evaluation/dataengineer/jr/v1/users'    
     df_users = pd.read_json(url_users)
+
+    # Extracting subscription objects from subscription column and then create a separate dataframe
+
     subscription_df=df_users[['id','subscription']]
     subscription_df = subscription_df.explode('subscription')
     df = pd.DataFrame(columns = ['createdAt', 'startDate','endDate','status','amount','id'])
@@ -63,11 +69,15 @@ def messages():
     url_messages='https://619ca0ea68ebaa001753c9b0.mockapi.io/evaluation/dataengineer/jr/v1/messages'    
     df_messages=pd.read_json(url_messages)
     
-    #hash messages
+    # Apply hashing function to the column in order to hide messages
+
     df_messages['message']=df_messages['message'].astype(str)
     df_messages['message'] = df_messages['message'].apply(lambda x: hashlib.sha256(x.encode()).hexdigest())
     
     return df_messages
+
+
+#Saving each dataframe in a separate variable executing functions
 
 users_df=users()
 subscriptions_df=subscriptions()
