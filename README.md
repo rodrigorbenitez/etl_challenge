@@ -55,7 +55,6 @@ Then:
 * Create Python Virtual Environment (if you want or install the libraries globally).
 * Install requirements
 * Run ETL script
-* Run API script
 
 ```sh
 python3 -m virtualenv venv
