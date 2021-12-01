@@ -33,6 +33,16 @@ Following a Dimensional Model, the schema consists in:
 
 ![Model](docs/ERD.png)
 
+#### Queries to answer the test questions
+
+sql_queries/sql_test.sql
+In sql_test.sql are the queries that solve the below questions:
+- How many total messages are being sent every day?
+- Are there any users that did not receive any message?
+- How many active subscriptions do we have today?
+- How much is the average price ticket (sum amount subscriptions / count subscriptions) breakdown by year/month (format YYYY-MM)?
+
+For queries testing, I connected the database with RazorSQL, an SQL query tool and database browser in order to see all the results.
 
 #### Logs
 
