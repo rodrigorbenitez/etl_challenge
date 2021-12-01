@@ -14,7 +14,7 @@ Of course I could have implemented more features like data tests, detailed error
 
 Before designing and building the project for me it's a good practice to create some Jupyter Notebooks, reading the source and mining data to understand them and think about how could I implement it efficiently. You can see them in analysis folder.
 
-Also to create a realist data project and workflow I have created a scr folder with a etl folder inside and 3 files: 
+Also to create a realist data project and workflow I have created a scr folder with an etl folder inside and 3 files: 
 
 * (src/etl) from source to database like a data integration process where extract, transform and load data:
  - db.py
@@ -22,8 +22,6 @@ Also to create a realist data project and workflow I have created a scr folder w
  - utils.py
 
 #### Model
-
-Trying to follow best modeling practices I have decided to create two tables instead of only Global_Land_Temperatures_By_City. 
 
 Following a Dimensional Model, the schema consists in:
 
@@ -75,7 +73,7 @@ python src/etl/main.py
 
 ## Development Time
 
-Well, I spent more than your reference time but sincerely I want to show you the way I work:
+Well, I spent more time than I expected but sincerely I want to show you the way I work:
 
 * Firstly, analysing sources, data and building some graphs with Jupyter Notebooks. This helps me to check: the number of rows inserted, the data types and to decide how to build the different tables.
 * Adding comments in code and generating good documentation.
