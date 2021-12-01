@@ -34,6 +34,7 @@ Following a Dimensional Model, the schema consists in:
 #### Queries to answer the test questions
 
 sql_queries/sql_test.sql
+
 In sql_test.sql are the queries that solve the below questions:
 - How many total messages are being sent every day?
 - Are there any users that did not receive any message?
