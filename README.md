@@ -1,4 +1,4 @@
-#  Spark - Junior Data Engineering Takehome Test
+#  Junior Data Engineering Takehome Test
 
 
 ## Description
