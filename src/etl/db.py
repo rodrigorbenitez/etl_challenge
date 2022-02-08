@@ -19,8 +19,8 @@ def create():
     model = [
          """
         CREATE TABLE IF NOT EXISTS users (
-            createdAt TEXT ,
-            updatedAt TEXT,
+            createdAt TIMESTAMP ,
+            updatedAt TIMESTAMP,
             firstName TEXT,
             lastName TEXT,
             address TEXT,
@@ -33,18 +33,18 @@ def create():
             gender TEXT,
             isSmoking TEXT,
             profession TEXT,
-            income TEXT
+            income REAL
             
 
         )
         """,
         """
         CREATE TABLE IF NOT EXISTS subscriptions (
-            createdAt TEXT,
-            startDate TEXT,
-            endDate TEXT,
+            createdAt TIMESTAMP,
+            startDate TIMESTAMP,
+            endDate TIMESTAMP,
             status TEXT,
-            amount TEXT,
+            amount REAL,
             user_id INTEGER,
             FOREIGN KEY (user_id) REFERENCES users(user_id)
                     ON DELETE CASCADE
