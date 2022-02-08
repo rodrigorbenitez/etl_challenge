@@ -29,7 +29,6 @@ Following a Dimensional Model, the schema consists in:
 * A fact table with users subscriptions
 * A fact table where store every message sent and received to users entities by a foreign key.
 
-![Model](docs/ERD.png)
 
 #### Queries to answer the test questions
 
